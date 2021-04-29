@@ -1,0 +1,64 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(156, 203, 247);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.board {
+    width: 1000px;
+    height: 80vh;
+    background-color: white;
+    border: 10px solid rgb(10, 112, 207);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col {
+    width: 300px;
+    height: 80%;
+    border: 5px solid rgb(10, 112, 207);
+}
+
+.card {
+    height: 50px;
+    background-color: rgb(112, 110, 240);
+    border: 5px solid rgb(63, 60, 236);
+    margin: 0.5rem;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.empty {
+    border: none;
+    background-color: transparent;
+}
+
+.hold {
+    border: 5px solid #cac6c6;
+}
+
+.hovered {
+    background-color: #cac6c6;
+    border: 5px dashed rgb(63, 60, 236);
+}
+
+.invisible {
+    display: none;
+}
