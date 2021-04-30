@@ -55,7 +55,7 @@ function dragDrop(evt) {
     if(dragOverCard != null) {
         // setCurrentCard(dragOverCard, currentCard);
 
-        dragOverCard.insertAdjacentElement('afterend', currentCard);
+        dragOverCard.insertAdjacentElement('beforebegin', currentCard);
         dragOverCard = null;
     } else {
         this.append(currentCard)        
